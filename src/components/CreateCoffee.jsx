@@ -42,16 +42,16 @@ const CreateCoffee = () => {
     return (
         <div className="md:container md:mx-auto 2xl:px-0 xl:px-0 lg:px-5 md:px-5 px-5">
             <Link to="/"><button className="btn normal-case font-rancho text-lg">Back to home</button></Link>
-            <div className="border p-20 my-20">
+            <div className="border p-20 my-10 bg-[#F4F3F0] rounded-md">
                 <div className="text-center">
-                    <h2 className="font-rancho text-4xl font-semibold mb-2">Add New Coffee</h2>
+                    <h2 className="font-rancho text-4xl font-semibold mb-2 text-[#374151]">Add New Coffee</h2>
                     <p className="font-raleway mb-5">It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
                 </div>
                 <form onSubmit={addCoffee} className="font-raleway">
                     {/* first row */}
                     <div className="flex gap-5 mb-5">
                         <div className="w-1/2">
-                            <label htmlFor="coffeeName" className="font-semibold text-lg">Name</label>
+                            <label htmlFor="coffeeName" className="font-semibold text-lg text-[#1b1a1acc]">Name</label>
                             <input type="text" placeholder="Enter coffee name" id="coffeeName" name="coffeeName" className="input input-bordered w-full" />
                         </div>
                         <div className="w-1/2">
@@ -62,31 +62,31 @@ const CreateCoffee = () => {
                     {/* second row */}
                     <div className="flex gap-5 mb-5">
                         <div className="w-1/2">
-                            <label htmlFor="supplier" className="font-semibold text-lg">Supplier</label>
+                            <label htmlFor="supplier" className="font-semibold text-lg text-[#1b1a1acc]">Supplier</label>
                             <input type="text" placeholder="Enter coffee supplier" id="supplier" name="supplier" className="input input-bordered w-full" />
                         </div>
                         <div className="w-1/2">
-                            <label htmlFor="taste" className="font-semibold text-lg">Taste</label>
+                            <label htmlFor="taste" className="font-semibold text-lg text-[#1b1a1acc]">Taste</label>
                             <input type="text" placeholder="Enter coffee taste" id="taste" name="taste" className="input input-bordered w-full" />
                         </div>
                     </div>
                     {/* third row */}
                     <div className="flex gap-5 mb-5">
                         <div className="w-1/2">
-                            <label htmlFor="category" className="font-semibold text-lg">Category</label>
+                            <label htmlFor="category" className="font-semibold text-lg text-[#1b1a1acc]">Category</label>
                             <input type="text" placeholder="Enter coffee category" id="category" name="category" className="input input-bordered w-full" />
                         </div>
                         <div className="w-1/2">
-                            <label htmlFor="details" className="font-semibold text-lg">Details</label>
+                            <label htmlFor="details" className="font-semibold text-lg text-[#1b1a1acc]">Details</label>
                             <input type="text" placeholder="Enter coffee details" id="details" name="details" className="input input-bordered w-full" />
                         </div>
                     </div>
                     {/* fourth row */}
                     <div className="mb-5">
-                        <label htmlFor="photo" className="font-semibold text-lg">Photo</label>
+                        <label htmlFor="photo" className="font-semibold text-lg text-[#1b1a1acc]">Photo</label>
                         <input type="text" placeholder="Enter photo URL" id="photo" name="photo" className="input input-bordered w-full" />
                     </div>
-                    <input type="submit" value="Add Coffee" className="btn btn-block normal-case font-rancho text-lg" />
+                    <input type="submit" value="Add Coffee" className="btn btn-block normal-case font-rancho text-lg text-[#331A15] bg-[#D2B48C] hover:bg-[#D2B48C] hover:border-[#331A15] border-[#331A15]" />
                 </form>
             </div>
         </div>

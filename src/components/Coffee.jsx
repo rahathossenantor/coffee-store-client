@@ -7,7 +7,6 @@ import Swal from "sweetalert2";
 
 const Coffee = ({ coffee, coffees, setCoffees }) => {
     const { _id, coffeeName, chef, supplier, taste, category, details, photo } = coffee;
-    console.log(coffees, setCoffees);
 
     const deleteCoffee = (id) => {
         Swal.fire({
@@ -49,12 +48,12 @@ const Coffee = ({ coffee, coffees, setCoffees }) => {
                     <p>{details}</p>
                 </div>
                 <div className="card-actions">
-                    <div className="join join-vertical space-y-3">
-                        <button className="btn join-item text-white bg-[#D2B48C] hover:bg-[#D2B48C]"><FaEye className="text-xl"></FaEye></button>
+                    <div className="join join-vertical space-y-1">
+                        <button title="View" className="btn join-item text-white bg-[#D2B48C] hover:bg-[#D2B48C]"><FaEye className="text-xl"></FaEye></button>
                         <Link to={`/update-coffee/${_id}`}>
-                            <button className="btn join-item text-white bg-[#3C393B] hover:bg-[#3C393B]"><FiEdit2 className="text-xl"></FiEdit2></button>
+                            <button title="Update" className="btn join-item text-white bg-[#3C393B] hover:bg-[#3C393B]"><FiEdit2 className="text-xl"></FiEdit2></button>
                         </Link>
-                        <button onClick={() => deleteCoffee(_id)} className="btn join-item text-white bg-[#EA4744] hover:bg-[#EA4744]"><MdDelete className="text-xl"></MdDelete></button>
+                        <button title="Delete" onClick={() => deleteCoffee(_id)} className="btn join-item text-white bg-[#EA4744] hover:bg-[#EA4744]"><MdDelete className="text-xl"></MdDelete></button>
                     </div>
                 </div>
             </div>
