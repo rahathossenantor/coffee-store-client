@@ -18,7 +18,7 @@ const CreateCoffee = () => {
         const coffee = { coffeeName, chef, supplier, taste, category, details, photo };
 
         try {
-            const res = await fetch("http://localhost:5000/add-coffee", {
+            const res = await fetch("https://coffeestoreserver.vercel.app/add-coffee", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

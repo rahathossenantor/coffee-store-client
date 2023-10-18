@@ -19,7 +19,7 @@ const UpdateCoffee = () => {
         const coffee = { coffeeName, chef, supplier, taste, category, details, photo };
 
         try {
-            const res = await fetch(`http://localhost:5000/modify-coffee/${_id}`, {
+            const res = await fetch(`https://coffeestoreserver.vercel.app/modify-coffee/${_id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
